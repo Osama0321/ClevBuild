@@ -1,0 +1,278 @@
+ @font-face {
+   font-family: Poppins;
+   src: url('https://clevebuildcad.matechco.com/Admin/css/Poppins/Poppins-Regular.ttf');
+   font-weight: 400;
+ }
+
+ @font-face {
+   font-family: Poppins;
+   src: url('https://clevebuildcad.matechco.com/Admin/css/Poppins/Poppins-Medium.ttf');
+   font-weight: 500;
+ }
+
+ @font-face {
+   font-family: Poppins;
+   src: url('https://clevebuildcad.matechco.com/Admin/css/Poppins/Poppins-SemiBold.ttf');
+   font-weight: 600;
+ }
+
+ html,
+ body {
+   height: 100%;
+   font-family: Poppins;
+ }
+
+ .login_page_Wrapper {
+   display: flex;
+   height: 100%;
+ }
+
+ .login-page {
+   display: block !important;
+   min-height: auto !important;
+   background: none;
+ }
+
+ .login_left,
+ .login_bg {
+   height: 100%;
+   position: relative;
+ }
+
+ .login_left::after {
+   content: '';
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   bottom: 0;
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55.37%, #000000 100%);
+ }
+
+ .login_bg img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .login_page_Wrapper .login_left {
+   width: 64%;
+   position: relative;
+ }
+
+ .login_page_Wrapper .login-box {
+   width: 36%;
+   display: flex;
+   align-items: center;
+ }
+
+ .login-box .card {
+   display: block;
+   padding: 0 105px;
+   box-shadow: none;
+ }
+
+ .login-box .card .card-body.login-card-body {
+   padding: 0;
+ }
+
+ .card-body.login-card-body form .row {
+   margin: 0;
+ }
+
+ .card-body.login-card-body p.login-box-msg {
+   text-align: left;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 21px;
+   padding: 7px 0 48px;
+ }
+
+ .card-body.login-card-body h2 {
+   margin: 0;
+   font-size: 22px;
+   font-weight: 600;
+   line-height: 33px;
+   text-align: left;
+   color: rgba(0, 0, 0, 1);
+ }
+
+ .login_left .login-left-text {
+   position: absolute;
+   bottom: 75px;
+   z-index: 10;
+   left: 70px;
+   right: 90px;
+ }
+
+ .login_left .login-left-text p {
+   margin: 0;
+   font-size: 25px;
+   font-weight: 500;
+   line-height: 37.5px;
+   text-align: left;
+   color: #fff;
+ }
+
+ .login-card-body form .input-group {
+   flex-direction: column;
+ }
+
+ .login-card-body form .input-group input.form-control {
+   width: 100%;
+   border: 1px solid rgba(194, 194, 194, 1);
+   outline: none;
+   border-radius: 12px;
+   padding: 11px;
+   height: auto;
+   box-shadow: none;
+ }
+
+ .login-card-body form .input-group label {
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 21px;
+   text-align: left;
+   color: rgba(0, 0, 0, 1);
+   margin: 0;
+   padding-bottom: 4px;
+ }
+
+ .login-card-body form .icheck-primary {
+   margin: 0 !important;
+   min-height: auto;
+ }
+
+ .login-card-body form .icheck-primary label::before {
+   margin: 0;
+   width: 18px;
+   height: 18px;
+   left: 0;
+   border-width: 1px !important;
+   border: 1px solid rgba(194, 194, 194, 1);
+   transition: .3s;
+ }
+
+ .login-card-body form .icheck-primary label {
+   color: #000;
+   font-weight: 400;
+   font-size: 14px;
+   padding-left: 25px !important;
+   line-height: 18px;
+ }
+
+ .login-card-body form .icheck-primary label::after {
+   width: 5px !important;
+   height: 10px !important;
+   top: -2px !important;
+   left: -1px !important;
+ }
+
+ .login-card-body form .icheck-primary input:checked+label::before {
+   background-color: rgba(0, 85, 230, 1);
+   border-color: rgba(0, 85, 230, 1);
+ }
+
+ .Forgot_text {
+   text-align: right;
+   padding-bottom: 24px;
+ }
+
+ .Forgot_text a.forgot_link {
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 21px;
+   color: rgba(0, 85, 230, 1);
+ }
+
+ .login_submit_btn {
+   width: 100%;
+ }
+
+ .login_submit_btn button.btn-primary {
+   border-radius: 12px;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 24px;
+   text-align: center;
+   padding: 11px;
+ }
+
+ .login-card-body .alert-danger {
+   padding: 10px 12px;
+   font-size: 14px;
+ }
+
+ .login-card-body .alert-danger button.close {
+   width: 18px;
+   height: 18px;
+   background: #fff;
+   border-radius: 50px;
+   opacity: 1;
+   font-size: 16px;
+   font-weight: 400;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #dc3545;
+   padding-top: 2px;
+ }
+
+ .login-card-body .alert-danger strong {
+   font-weight: 500;
+ }
+
+ @media (max-width: 1199px) {
+   .login-box .card {
+     padding: 0 70px;
+   }
+
+   .login_left .login-left-text p {
+     font-size: 22px;
+     line-height: 32px;
+   }
+ }
+
+ @media (max-width:991px) {
+   .login_left .login-left-text p {
+     font-size: 17px;
+     line-height: 26px;
+   }
+
+   .login-box .card {
+     padding: 0 50px;
+   }
+
+   .login_page_Wrapper .login_left {
+     width: 60%;
+   }
+
+   .login_page_Wrapper .login-box {
+     width: 40%;
+   }
+ }
+
+ @media (max-width: 767px) {
+   .login_page_Wrapper .login_left {
+     display: none;
+   }
+
+   .login_page_Wrapper .login-box {
+     width: 100%;
+     justify-content: center;
+   }
+
+   .login-box .card {
+     padding: 0;
+     width: 60%;
+   }
+ }
+
+ @media (max-width: 479px) {
+   .login-box .card {
+     width: 70%;
+   }
+ }
+
+ table > thead > tr > th {
+  vertical-align: top;
+ }
